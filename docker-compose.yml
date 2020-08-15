@@ -76,18 +76,14 @@ services:
 
 networks:
   soj-net:
-    driver: overlay
+    driver: bridge
 
 volumes:  # TODO driver?
   dbdata: {}
-  problems:
-    driver: vieux/sshfs
-    driver_opts:
-      sshcmd: "soj@47.106.234.124:/path/to/problems"
-      password: "xxxyyy"
+  problems: {}
+    # driver: vieux/sshfs
+    # driver_opts:
+    #   sshcmd: "soj@47.106.234.124:/path/to/problems"
+    #   password: "xxxyyy"
   staticfiles: {}
-  submissions:
-    driver: vieux/sshfs
-    driver_opts:
-      sshcmd: "soj@47.106.234.124:/path/to/submissions"
-      password: "xxxyyy"
+  submissions: {}

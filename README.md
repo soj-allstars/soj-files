@@ -30,4 +30,9 @@ Create a django superuser:
 docker-compose exec soj python manage.py createsuperuser
 ```
 
+Run django collectstatic:
+```
+docker-compose exec soj python manage.py collectstatic
+```
+
 And congrats! You've successfully deploy soj to a single machine. Next step is to go to `/addproblem` to add some BRAND NEW problems!

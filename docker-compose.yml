@@ -59,7 +59,7 @@ services:
       - submissions:/usr/src/judger/submissions
     deploy:
       mode: replicated
-      replicas: 6
+      replicas: 4
 
   soj-frontend:
     image: jkswing/soj-frontend
